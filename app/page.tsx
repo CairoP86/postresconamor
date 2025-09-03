@@ -131,20 +131,33 @@ export default function Home() {
 
   return (
     <>
-      {/* 🟢 NAVBAR */}
-      <nav className="bg-white shadow-md fixed w-full top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-pink-600">Dalu & Co.</h1>
-          <ul className="flex space-x-8 text-gray-700 font-medium">
-            <li><a href="#inicio" className="flex items-center gap-2 hover:text-pink-600"><FaHome /> Inicio</a></li>
-            <li><a href="#menu" className="flex items-center gap-2 hover:text-pink-600"><FaStore /> Tienda</a></li>
-            <li><a href="#horarios" className="flex items-center gap-2 hover:text-pink-600"><FaUsers /> ¿Quiénes somos?</a></li>
-            <li><a href="#testimonios" className="flex items-center gap-2 hover:text-pink-600"><FaBlog /> Blog</a></li>
-            <li><a href="#footer" className="flex items-center gap-2 hover:text-pink-600"><FaPhone /> Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div className="h-20"></div>
+    {/* NAVBAR */}
+<nav className="bg-pink-600 text-white shadow-md fixed top-0 w-full z-50">
+  <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    {/* Logo */}
+    <h1 className="text-2xl font-bold">Dalu & Co.</h1>
+
+    {/* Links */}
+    <ul className="flex space-x-6 text-sm font-medium">
+      <li className="hover:text-yellow-300 transition">
+        <a href="#inicio">Inicio</a>
+      </li>
+      <li className="hover:text-yellow-300 transition">
+        <a href="#menu">Tienda</a>
+      </li>
+      <li className="hover:text-yellow-300 transition">
+        <a href="#quienes-somos">¿Quiénes somos?</a>
+      </li>
+      <li className="hover:text-yellow-300 transition">
+        <a href="#blog">Blog</a>
+      </li>
+      <li className="hover:text-yellow-300 transition">
+        <a href="#contacto">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 
       {/* 🟢 HERO */}
       <main id="inicio" className="bg-gray-50 text-gray-900">
@@ -435,3 +448,4 @@ export default function Home() {
     </>
   );
 }
+
