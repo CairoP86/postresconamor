@@ -132,7 +132,8 @@ export default function Home() {
   return (
     <>
     {/* NAVBAR */}
-<nav className="bg-pink-600 text-white shadow-md fixed top-0 w-full z-50">
+<nav className="bg-gray-900 text-white shadow fixed top-0 w-full z-50">
+
   <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
     {/* Logo */}
     <h1 className="text-2xl font-bold">Dalu & Co.</h1>
